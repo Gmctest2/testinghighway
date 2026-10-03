@@ -433,9 +433,9 @@ en:{score:'Score',coins:'Coins',play:'▶ Play',settings:'Settings',close:'Close
 let lang='';try{lang=localStorage.getItem('hd3-lang')||''}catch(_){}
 if(!L[lang]){const n=(navigator.language||'en').slice(0,2);lang=L[n]?n:'en'}
 L.nl.full='Volledig scherm';L.fr.full='Plein écran';L.en.full='Fullscreen';
-Object.assign(L.nl,{gateS:'Voer je toegangscode in om te spelen.',gateB:'Toegang',gateBad:'Verkeerde code.',gateWait:n=>`Te veel pogingen. Wacht ${n} s.`});
-Object.assign(L.fr,{gateS:"Entre ton code d'accès pour jouer.",gateB:'Entrer',gateBad:'Code incorrect.',gateWait:n=>`Trop d'essais. Attends ${n} s.`});
-Object.assign(L.en,{gateS:'Enter your access code to play.',gateB:'Enter',gateBad:'Wrong code.',gateWait:n=>`Too many tries. Wait ${n}s.`});
+Object.assign(L.nl,{gateS:'Voer je toegangscode in om te spelen in de test versie.',gateB:'Toegang',gateBad:'Verkeerde code.',gateWait:n=>`Te veel pogingen. Wacht ${n} s.`});
+Object.assign(L.fr,{gateS:"Entre ton code d'accès pour jouer a la version test.",gateB:'Entrer',gateBad:'Code incorrect.',gateWait:n=>`Trop d'essais. Attends ${n} s.`});
+Object.assign(L.en,{gateS:'Enter your access code to play this test version.',gateB:'Enter',gateBad:'Wrong code.',gateWait:n=>`Too many tries. Wait ${n}s.`});
 const tr=k=>L[lang][k];
 function applyLang(){
   document.documentElement.lang=lang;
